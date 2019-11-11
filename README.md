@@ -2,7 +2,7 @@
 
 The project is targeted for demo of using angular 8 directive for image transformation
 
-/*
+```
 * Usage:
 * <img ... [matAzonImageProc]="matAzonImageProcData" (srcChange)="onImgSrcChange($event)">
 * whereas matAzonImageProcData is json object of inputs in with the following keys:
@@ -11,16 +11,25 @@ The project is targeted for demo of using angular 8 directive for image transfor
 * flip: [true/false], false is by default - flips the image horizontally;
 * (srcChange) is a callback for caller component to get new created <img> src value.
 *
-*/
+```
 
-## How to run
+## Getting Started
 
-1. Have Git installed (https://git-scm.com/downloads).
-2. Have Node installed (https://nodejs.org/en/download/).
-3. Run the following command from where is planning to have the project installed: 
-   'git clone git@github.com:votoznotna/img-transformer.git'.
-4. Go to root project folder and run 'npm install'.
-5. From the same folder run 'npm start'.
-6. Navigate http://localhost:4200/ in browser and enjoy the run.
+* Have [Git] (https://git-scm.com/downloads) installed.
+* Have [Node](https://git-scm.com/downloads) installed. 
+* Run the following command from where is planning to have the project installed: 
+```
+git clone git@github.com:votoznotna/img-transformer.git
+```
+npm start
+```
+npm install
+```
+* From the same folder run
+```
+npm start
+``` 
+* Navigate http://localhost:4200/ in browser and enjoy the run.
+
 
 
