@@ -15,9 +15,12 @@ The project is targeted for demo of using angular 8 directive for image transfor
 
 ## How to run
 
-Have git installed (https://git-scm.com/downloads) 
-Have Node installed (https://nodejs.org/en/download/)
-Run the following commands: git clone 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Have Git installed (https://git-scm.com/downloads).
+2. Have Node installed (https://nodejs.org/en/download/).
+3. Run the following command from where is planning to have the project installed: 
+   'git clone git@github.com:votoznotna/img-transformer.git'.
+4. Go to root project folder and run 'npm install'.
+5. From the same folder run 'npm start'.
+6. Navigate http://localhost:4200/ in browser and enjoy the run.
 
 
