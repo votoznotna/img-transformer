@@ -1,27 +1,23 @@
-# Instrumental
+# Overall
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
+The project is targeted for demo of using angular 8 directive for image transformation
 
-## Development server
+/*
+* Usage:
+* <img ... [matAzonImageProc]="matAzonImageProcData" (srcChange)="onImgSrcChange($event)">
+* whereas matAzonImageProcData is json object of inputs in with the following keys:
+* grayScale: [true/false], false is by default - converts image to 100% gray color;
+* invert: [true/false], false is by default - inverts the colors of the image;
+* flip: [true/false], false is by default - flips the image horizontally;
+* (srcChange) is a callback for caller component to get new created <img> src value.
+*
+*/
 
+## How to run
+
+Have git installed (https://git-scm.com/downloads) 
+Have Node installed (https://nodejs.org/en/download/)
+Run the following commands: git clone 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

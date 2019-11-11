@@ -1,12 +1,26 @@
 import { TestBed, async } from '@angular/core/testing';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { AzonImageProcDirective } from './azon-image-proc.directive';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        AzonImageProcDirective
       ],
+      imports: [
+        FormsModule,
+        MatInputModule,
+        MatCheckboxModule,
+        MatButtonModule,
+        MatCardModule
+    ],
     }).compileComponents();
   }));
 
@@ -16,16 +30,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'instrumental'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('instrumental');
-  });
-
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('instrumental app is running!');
+    expect(compiled.querySelector('h3').textContent).toContain('Image transformation in action');
   });
 });

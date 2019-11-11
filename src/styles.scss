@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 20px; font-size: 16px; font-family: Roboto, "Helvetica Neue", sans-serif; }
+input {
+  font-size: 0.9rem;
+}
+.example-h2 {
+  margin: 10px;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 30px;
+  > input {
+    margin-left: 10px;
+  }
+  mat-label:last-of-type {
+    margin-left: 20px;
+  }
+}
+
+section.sample-image {
+  div.content{
+    margin-top: 30px;
+    div.image {
+      position:relative;
+      padding: 20px;
+      img {
+         position:relative;
+         height: 'auto';
+         position: absolute !important;
+       }
+     }
+  }
+}
+section.commands {
+  button {
+    margin-top: 20px;
+    &:last-of-type {
+      margin-left: 50px;
+    }
+  }
+}
+
+.example-margin {
+  margin: 0 10px;
+}
+
+

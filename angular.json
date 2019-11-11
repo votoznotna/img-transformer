@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -93,6 +94,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -124,6 +126,47 @@
           }
         }
       }
-    }},
-  "defaultProject": "instrumental"
+    },
+    "NgxAzonImage": {
+      "projectType": "library",
+      "root": "projects/ngx-azon-image",
+      "sourceRoot": "projects/ngx-azon-image/src",
+      "prefix": "NgxAzon",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-azon-image/tsconfig.lib.json",
+            "project": "projects/ngx-azon-image/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-azon-image/src/test.ts",
+            "tsConfig": "projects/ngx-azon-image/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-azon-image/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-azon-image/tsconfig.lib.json",
+              "projects/ngx-azon-image/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "instrumental",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
