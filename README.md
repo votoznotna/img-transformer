@@ -3,7 +3,6 @@
 The project is targeted for demo of using Angular 8 directive for unobtrusive image transformation
 
 ```
-*
 * Usage:
 * <img ... [matAzonImageProc]="matAzonImageProcData" (srcChange)="onImgSrcChange($event)">
 * whereas matAzonImageProcData is json object of inputs in with the following keys:
